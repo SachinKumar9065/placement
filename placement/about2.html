@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>about us</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous"/>
+    <!-- <link rel="stylesheet" href="about.css"> -->
+    <style>
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+     background-color:#ddd;
+} 
+.content{
+     background:#ddd; 
+}
+.section{
+    width: 100%;
+    min-height: 100vh; 
+    background-color: #ddd;
+}
+.container{
+    width: 80%;
+    display: block;
+    margin: auto;
+    padding-top: 100px;
+}
+.content-section{
+    float: left;
+    width: 55%;
+}
+.image-section{
+    float: right;
+    width: 40%;
+}
+.image-section img{
+    width: 100%;
+    height: auto;
+    color: #5d5d5d;
+}
+.content-section .title{
+    text-transform: uppercase;
+    font-size: 28px;
+}
+.content-section .content h3{
+    margin-top: 20px;
+    color: #5d5d5d;
+}
+.content-section .content p{
+    margin-top: 10px;
+    font-family: sans-serif;
+    font-size: 18px;
+    line-height: 1.5;
+}
+.content-section .content .button{
+    margin-top: 30px;
+}
+.content-section .content .button a{
+    background-color: #3d3d3d;
+    padding: 12px 40px;
+    text-decoration: none;
+    color: #fff;
+    font-size: 25px;
+    letter-spacing: 1.5px;
+}
+.content-section .content .button a:hover{
+    background-color: #a52a2a;
+    color: #fff;
+}
+.content-section .social{
+    margin: 40px 40px;
+}
+.content-section .social i{
+    color: #a52a2a;
+    font-size: 30px;
+    padding: 0px 10px;
+}
+.content-section .social i:hover{
+    color: #3d3d3d;
+}
+@media screen and (max-width: 768px){
+    .container{
+        width: 80%;
+        display: block;
+        margin: auto;
+        padding-top: 50px;
+    }
+    .content-section{
+        float: none;
+        width: 100%;
+        display: block;
+        margin: auto;
+        
+    }
+    .image-section{
+        float: none;
+        width: 100%;
+    }
+    .image-section img{
+        width: 100%;
+        height: auto;
+        display: block;
+        margin: auto;
+    }
+    .content-section .title{
+        text-align: center;
+        font-size: 19px;
+    }
+    .content-section .content .button{
+        text-align: center;
+    }
+    .content-section .content .button a{
+        padding: 9px 30px;
+    }
+    .content-section .social{
+        text-align: center;
+    }
+}
+#more {display: none;}
+
+    </style>
+</head>
+<body>
+    
+    <script src="about.js"></script>
+    <div class="section">
+        <div class="container">
+            <div class="content-section">
+                <div class="title">
+                    <h1>About Us</h1>
+                </div>
+                <div class="content">
+                    <h3>PLACEMENT INFORMATION AND MANAGEMENT SYSTEM</h3>
+                    <p>Introducing our revolutionary website, meticulously crafted to tackle the widespread challenge of accessing accurate placement data for colleges. We take immense pride in presenting a dedicated platform that aims to provide unwavering reliability and unwavering truthfulness in the realm of educational institution placement statistics.<span id="dots">...</span><span id="more">Our website is the culmination of tireless efforts, meticulously collecting and verifying data to ensure the utmost accuracy. With a comprehensive database encompassing numerous colleges and universities, we empower students, parents, and aspiring professionals to make well-informed decisions regarding their educational and career paths.
+                            
+                        We understand the significance of reliable placement information in shaping an individual's future, and thus, our team of experts meticulously curates the data from authentic sources. We go above and beyond to ensure that the information provided on our platform undergoes a stringent verification process to maintain the highest levels of integrity.
+                        
+                        By utilizing our website, users gain access to a wealth of invaluable data on placement statistics, including the percentage of students placed, average salary packages, renowned recruiters, and much more. This comprehensive information equips individuals with the necessary insights to assess the performance and potential of various colleges, facilitating informed decision-making.
+                        
+                        Transparency is the cornerstone of our platform. We believe that every student deserves accurate and unbiased information to shape their educational journey. Our commitment to providing truthful and reliable placement data serves as a guiding principle, ensuring that our users can rely on our platform as a trusted source of information.
+                        
+                        Join us in revolutionizing the way placement data is accessed and utilized. Experience the power of reliable information, empowering you to embark on a successful educational and professional voyage. Explore our website today and witness firsthand how we redefine the landscape of college placement data</span></p>
+                    <button onclick="myFunction()" id="myBtn">Read more</button>
+                  
+                       
+
+                </div>
+                <div class="social">
+                    <a href=""><i class="fab fa-facebook"></i></a>
+                    <a href=""><i class="fab fa-twitter"></i></a>
+                    <a href=""><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+            <div class="image-section">
+                <img src="./logo/about_pic.png" alt=""> 
+            </div>
+        </div>
+    </div>
+</body>
+</html>
